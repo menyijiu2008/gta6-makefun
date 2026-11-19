@@ -1,3 +1,4 @@
+// Sunport Chase (阳光港追缉) — this entry's hand-in program for the gta6-01 bounty.
 // A working gta6-01 entry (Node 22, standard library only): the game is this directory's
 // game/ folder, plain static files a desktop browser loads offline (game/index.html and its ES
 // modules, no library and no network request), and the program hands it in. It copies game/ and
@@ -39,3 +40,6 @@ writeFileSync(
     game_path_max_bytes: 1000,
   }),
 );
+
+// Sunport Chase: say what was handed in, so a local run is easy to eyeball.
+console.log(`Sunport Chase handed in to ${out} (game/, screenshots/, dossier.json)`);
